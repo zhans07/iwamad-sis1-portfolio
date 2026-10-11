@@ -9,6 +9,7 @@ This is my personal portfolio website created using HTML5, CSS3, and vanilla Jav
 1. **Colour palette:** I chose blue as the primary colour because it creates a clean, professional look. I used light backgrounds and dark text for readability.
 2. **Responsive layout:** On desktop, the projects appear in three columns. On smaller screens, they change to a single column to make the content easier to read.
 3. **Accessibility:** I used semantic HTML, labels for form fields, visible keyboard focus styles, and specific validation messages to make the website easier to use.
+4. **Mobile usability:** I checked the website on a phone to make sure the content fits the screen and remains easy to read.
 
 ## Live Website
 
