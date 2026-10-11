@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zhansaya's personal portfolio, projects, and contact information.">
+  <title>Zhansaya | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#about">Zhansaya<span>.</span></a>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" type="button"
+      aria-label="Switch to dark mode" aria-pressed="false">
+      🌙 Dark mode
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <p class="eyebrow">IT MANAGEMENT STUDENT · KBTU</p>
+        <h1>Hello, I'm <span>Zhansaya.</span></h1>
+        <p class="hero-description">
+          I am an IT Management student interested in technology,
+          web development, and creating useful digital products.
+          I enjoy learning how design and technology work together
+          to solve everyday problems.
+        </p>
+        <a class="primary-button" href="#projects">Explore my projects ↓</a>
+      </div>
+
+      <div class="hero-card" aria-label="A little about me">
+        <div class="avatar" aria-hidden="true">Z</div>
+        <h2>Learning by building</h2>
+        <p>Student · Problem solver · Future IT professional</p>
+        <div class="interest-list">
+          <span>Web development</span>
+          <span>Database design</span>
+          <span>Product thinking</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I'VE WORKED ON</p>
+        <h2>My Projects</h2>
+        <p>Practical projects that helped me develop my technical skills.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-number">01 / PRODUCT & DESIGN</div>
+          <h3>Finly — Family Budget Tracker</h3>
+          <p>
+            A budgeting app concept designed to help families organize
+            expenses, track spending, and understand their finances.
+            I worked on user interface wireframes and database planning.
+          </p>
+          <div class="tags">
+            <span>UX/UI</span><span>Wireframes</span><span>ER Diagram</span>
+          </div>
+          <a class="project-link"
+             href="https://github.com/zhans07/iwamad-practice"
+             target="_blank" rel="noopener noreferrer">
+            View project repository ↗
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02 / DATABASES</div>
+          <h3>University Database</h3>
+          <p>
+            A relational database project for managing students and course
+            enrollments. I designed an ER diagram and practiced creating
+            tables and querying structured data with PostgreSQL.
+          </p>
+          <div class="tags">
+            <span>PostgreSQL</span><span>SQL</span><span>ER Diagram</span>
+          </div>
+          <a class="project-link"
+             href="https://github.com/zhans07/iwamad-practice"
+             target="_blank" rel="noopener noreferrer">
+            View project repository ↗
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03 / WEB DEVELOPMENT</div>
+          <h3>React Profile Card</h3>
+          <p>
+            A responsive profile website built while learning component-based
+            development. It includes reusable UI components, navigation,
+            and an interactive Like button.
+          </p>
+          <div class="tags">
+            <span>React</span><span>TypeScript</span><span>CSS</span>
+          </div>
+          <a class="project-link"
+             href="https://github.com/zhans07/iwamad-practice"
+             target="_blank" rel="noopener noreferrer">
+            View project repository ↗
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact Me</h2>
+        <p>Have a question or an idea? Send me a message below.</p>
+      </div>
+
+      <form id="contactForm" novalidate>
+        <div class="form-field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text"
+                 autocomplete="name" required>
+          <small class="field-error" id="nameError" aria-live="polite"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email"
+                 autocomplete="email" required>
+          <small class="field-error" id="emailError" aria-live="polite"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <small class="field-error" id="messageError" aria-live="polite"></small>
+        </div>
+
+        <button class="primary-button submit-button" type="submit">
+          Send message →
+        </button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Zhansaya. Built with HTML, CSS and JavaScript.</p>
+    <a href="#about">Back to top ↑</a>
+  </footer>
+</body>
+</html>
