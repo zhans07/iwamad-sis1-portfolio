@@ -458,3 +458,10 @@ html[data-theme="dark"] .primary-button {
     padding-inline: 24px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
